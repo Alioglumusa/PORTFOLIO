@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Personel Portfolio Website</title>
+  </head>
+  <body>
+    <!-- ---------Header Start--------- -->
+    <div id="header">
+      <!-- ---Container Start--- -->
+      <div class="container">
+        <!-- ---Nav Start--- -->
+        <nav>
+          <img src="images/logooo-modified.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h1>
+            Hi, I'm <span>Musa</span> <br />
+            From Turkey
+          </h1>
+        </div>
+        <!-- ---Nav End--- -->
+      </div>
+      <!-- ---Container End--- -->
+    </div>
+    <!-- ---------Header End--------- -->
+
+    <!-- --------About Start-------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm Musa Alioğlu, 24 years old electrical-electronics I am an
+              engineering graduate. Defense industry my internships And I'm done
+              with software. About a year I developed projects on electricity
+              and managed the business follow-up. Currently active at BilgeAdam
+              education academy I am continuing my education on software. Plus I
+              am constantly improving myself with the training sets I receive. I
+              continue.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML & CSS</span><br />Web/App interfaces</li>
+                <li><span>JavaScript</span><br />Web/App interfaces</li>
+                <li><span>React</span><br />Web/App interfaces</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - 2022</span><br />SH Marine Electrical - Engineer
+                </li>
+                <li><span>2020 - 2021</span><br />Online Internship - Software</li>
+                <li>
+                  <span>2019 - 2020</span><br />TEKOM Electric and Electronic Mech. Ins. Singing. Trade
+                  Ltd. Sti. - Internship
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <li><span>2022</span><br />BilgeAdam Education Academy(Front-End)</li>
+                  <span>2016-2020</span><br />Bozok University-Electrical
+                  Electronics Engineering
+                </li>
+                <li><span>2012-2016</span><br />Kültür Basic High School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------About End--------- -->
+
+    <!-- ---------Services Start--------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-html5"></i>
+            <h2>HTML</h2>
+            <p>
+              HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes. 
+            </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-css3-alt"></i>
+            <h2>CSS</h2>
+            <p>
+              Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+            </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-square-js"></i>
+            <h2>JavaScript</h2>
+            <p>
+              JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
+            </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>React</h2>
+            <p>
+              The React.js framework is an open-source JavaScript framework and library developed by Facebook. It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
+            </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------Services End--------- -->
+
+    <!-- ---------Portfolio Start--------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work1-randomcolor.jpg" class="work-img"/>
+            <div class="layer">
+              <h3>Random Color</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, enim!
+              </p>
+              <a href="https://alioglumusa.github.io/Random-Color/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work2-cofffffee.jpg" class="work-img"/>
+            <div class="layer">
+              <h3>Starbucks</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, enim!
+              </p>
+              <a href="https://alioglumusa.github.io/Starbucks-Website-Landing-Page/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work3-tictac.jpg" class="work-img"/>
+            <div class="layer">
+              <h3>Tic-Tac-Toe</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, enim!
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://alioglumusa.github.io/Tic-Tac-Toe/" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- ---------Portfolio End--------- -->
+
+    <!-- ---------Contact Start--------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>alioglumusa@icloud.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>+90534***6075</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/alioglumusa/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Alioglumusa"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+            <a href="images/Musa-Alioğlu-CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          copyright ©️ Musa. Made with <i class="fa-solid fa-heart"></i> by
+          ALISON
+        </p>
+      </div>
+    </div>
+    <!-- ---------Contact End--------- -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyxtgbY9BG5vQT8t_JhOFPvEb6lG3KlGM9RSqEjuXfCmtifn2TFxvLfxhk3QTyyTJnd/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+  <script src="script.js"></script>
+</html>
